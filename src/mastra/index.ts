@@ -7,9 +7,9 @@ import { llm } from './agents/structured-agent'
 export const mastra = new Mastra({
   workflows: { airFlightWorkflow },
   agents: { llm },
-  // storage: new LibSQLStore({
-  //   url: ':memory:',
-  // }),
+  storage: new LibSQLStore({
+    url: ':memory:',
+  }),
   logger: new PinoLogger({
     name: 'Mastra',
     level: 'info',
