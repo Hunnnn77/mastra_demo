@@ -5,12 +5,8 @@
       "args": ["/c", "npx", "-y", "@mastra/mcp-docs-server"],
       "type": "stdio"
     },
-    "filesystem": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "F:\\root\\airflight\\app\\src\\mastra\\index.ts"
-      ]
+    "tickets": {
+      "url": "https://green-ancient-hospital.mastra.cloud"
     }
   }
 }

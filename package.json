@@ -6,6 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "mastra dev",
     "build": "mastra build",
+    "build:mcp": "tsup src/mastra/stdio.ts --format esm --no-splitting --dts && chmod +x dist/stdio.js",
     "start": "mastra start",
     "fmt": "prettier --write ."
   },
@@ -22,8 +23,10 @@
     "@mastra/core": "^0.15.2",
     "@mastra/libsql": "^0.13.7",
     "@mastra/loggers": "^0.10.9",
+    "@mastra/mcp": "^0.11.2",
     "@mastra/memory": "^0.14.2",
     "@tavily/core": "^0.5.11",
+    "tsup": "^8.5.0",
     "zod": "^3.25.76"
   },
   "devDependencies": {
@@ -31,5 +34,6 @@
     "mastra": "^0.11.2",
     "prettier": "3.6.2",
     "typescript": "^5.9.2"
-  }
+  },
+  "bin": "dist/stdio.js"
 }

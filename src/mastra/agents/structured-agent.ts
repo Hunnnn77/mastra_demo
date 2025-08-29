@@ -9,9 +9,9 @@ export const llm = new Agent({
   instructions: ``,
   description: "make strutured output",
   model,
-  memory: new Memory({
-    storage: new LibSQLStore({
-      url: 'file:../mastra.db', // path is relative to the .mastra/output directory
-    }),
-  }),
+  // memory: new Memory({
+  //   storage: new LibSQLStore({
+  //     url: 'file:../mastra.db', // path is relative to the .mastra/output directory
+  //   }),
+  // }),
 })
